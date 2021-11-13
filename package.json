@@ -1,0 +1,16 @@
+{
+  "name": "fcc-jamstack-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vibe.js",
+  "scripts": {
+    "build": "eleventy",
+    "server": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
