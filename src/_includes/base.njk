@@ -14,6 +14,11 @@
     <a href="/">Your Page</a> | <a href="/about">About Page</a>
   </header>
   {{ content | safe }}
+  <div>
+    {% for item in news %}
+      <a href="/{{ item.country }}">{{ item.country.toUpperCase() }} News</a>
+    {% endfor %}
+  </div>
 
 </body>
 
