@@ -1,16 +1,15 @@
 ---
-title: A Page for You
+title: NewsFeed
 layout: base.njk
+pagination:
+  data: news
+  size: 1
+  alias: news
+permalink: /{{ news.country }}/index.html
 ---
 
 <div class="container">
-  <h1>This is a page for you</h1>
-  <div class="vibe">
-    You are great!
-  </div>
-  <div class="love">
-    ❤️
-  </div>
+  <h1>Headlines from the {{ (news.country).toUpperCase() }}!</h1>
   <ul>
     {% for article in news.articles %}
       <li>
@@ -20,5 +19,3 @@ layout: base.njk
     {% endfor %}
   </ul>
 </div>
-
-<script src="/js/vibe.js"></script>
